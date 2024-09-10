@@ -19,6 +19,7 @@
 		A1D4B38D2C8C0E0E0015B941 /* ReactNativeSDKExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D4B38C2C8C0E0E0015B941 /* ReactNativeSDKExampleUITests.m */; };
 		A1D4B38F2C8C0E0E0015B941 /* ReactNativeSDKExampleUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D4B38E2C8C0E0E0015B941 /* ReactNativeSDKExampleUITestsLaunchTests.m */; };
 		A1D4B39D2C8C4F860015B941 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = A1D4B39B2C8C4F860015B941 /* main.jsbundle */; };
+		A1D4B3B02C90060C0015B941 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = A1D4B3AF2C90060C0015B941 /* assets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		A1D4B38C2C8C0E0E0015B941 /* ReactNativeSDKExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeSDKExampleUITests.m; sourceTree = "<group>"; };
 		A1D4B38E2C8C0E0E0015B941 /* ReactNativeSDKExampleUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeSDKExampleUITestsLaunchTests.m; sourceTree = "<group>"; };
 		A1D4B39B2C8C4F860015B941 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		A1D4B3AF2C90060C0015B941 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ReactNativeSDKExample/jsbundle/assets; sourceTree = "<group>"; };
 		C906D839977AE94C86016D65 /* libPods-ReactNativeSDKExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeSDKExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF75348F10D3BCD50CFD8C4 /* Pods-ReactNativeSDKExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeSDKExample.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeSDKExample/Pods-ReactNativeSDKExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 		A1D4B35A2C8C0E0D0015B941 = {
 			isa = PBXGroup;
 			children = (
+				A1D4B3AF2C90060C0015B941 /* assets */,
 				A1D4B3652C8C0E0D0015B941 /* ReactNativeSDKExample */,
 				A1D4B3812C8C0E0E0015B941 /* ReactNativeSDKExampleTests */,
 				A1D4B38B2C8C0E0E0015B941 /* ReactNativeSDKExampleUITests */,
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D4B3B02C90060C0015B941 /* assets in Resources */,
 				A1D4B3732C8C0E0E0015B941 /* Assets.xcassets in Resources */,
 				A1D4B3762C8C0E0E0015B941 /* Base in Resources */,
 				A1D4B3712C8C0E0D0015B941 /* Base in Resources */,
