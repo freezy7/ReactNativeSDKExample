@@ -18,8 +18,7 @@
 		A1D4B3832C8C0E0E0015B941 /* ReactNativeSDKExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D4B3822C8C0E0E0015B941 /* ReactNativeSDKExampleTests.m */; };
 		A1D4B38D2C8C0E0E0015B941 /* ReactNativeSDKExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D4B38C2C8C0E0E0015B941 /* ReactNativeSDKExampleUITests.m */; };
 		A1D4B38F2C8C0E0E0015B941 /* ReactNativeSDKExampleUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D4B38E2C8C0E0E0015B941 /* ReactNativeSDKExampleUITestsLaunchTests.m */; };
-		A1D4B39D2C8C4F860015B941 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = A1D4B39B2C8C4F860015B941 /* main.jsbundle */; };
-		A1D4B3B02C90060C0015B941 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = A1D4B3AF2C90060C0015B941 /* assets */; };
+		A1FA56972CF45A15006A52DA /* jsbundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A1FA56962CF45A15006A52DA /* jsbundle.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +57,7 @@
 		A1D4B3882C8C0E0E0015B941 /* ReactNativeSDKExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativeSDKExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D4B38C2C8C0E0E0015B941 /* ReactNativeSDKExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeSDKExampleUITests.m; sourceTree = "<group>"; };
 		A1D4B38E2C8C0E0E0015B941 /* ReactNativeSDKExampleUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeSDKExampleUITestsLaunchTests.m; sourceTree = "<group>"; };
-		A1D4B39B2C8C4F860015B941 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		A1D4B3AF2C90060C0015B941 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = ReactNativeSDKExample/jsbundle/assets; sourceTree = "<group>"; };
+		A1FA56962CF45A15006A52DA /* jsbundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = jsbundle.bundle; sourceTree = "<group>"; };
 		C906D839977AE94C86016D65 /* libPods-ReactNativeSDKExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeSDKExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF75348F10D3BCD50CFD8C4 /* Pods-ReactNativeSDKExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeSDKExample.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeSDKExample/Pods-ReactNativeSDKExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,7 +108,6 @@
 		A1D4B35A2C8C0E0D0015B941 = {
 			isa = PBXGroup;
 			children = (
-				A1D4B3AF2C90060C0015B941 /* assets */,
 				A1D4B3652C8C0E0D0015B941 /* ReactNativeSDKExample */,
 				A1D4B3812C8C0E0E0015B941 /* ReactNativeSDKExampleTests */,
 				A1D4B38B2C8C0E0E0015B941 /* ReactNativeSDKExampleUITests */,
@@ -133,13 +130,13 @@
 		A1D4B3652C8C0E0D0015B941 /* ReactNativeSDKExample */ = {
 			isa = PBXGroup;
 			children = (
+				A1FA56962CF45A15006A52DA /* jsbundle.bundle */,
 				A1D4B3662C8C0E0D0015B941 /* AppDelegate.h */,
 				A1D4B3672C8C0E0D0015B941 /* AppDelegate.m */,
 				A1D4B3692C8C0E0D0015B941 /* SceneDelegate.h */,
 				A1D4B36A2C8C0E0D0015B941 /* SceneDelegate.m */,
 				A1D4B36C2C8C0E0D0015B941 /* ViewController.h */,
 				A1D4B36D2C8C0E0D0015B941 /* ViewController.m */,
-				A1D4B39C2C8C4F860015B941 /* jsbundle */,
 				A1D4B36F2C8C0E0D0015B941 /* Main.storyboard */,
 				A1D4B3722C8C0E0E0015B941 /* Assets.xcassets */,
 				A1D4B3742C8C0E0E0015B941 /* LaunchScreen.storyboard */,
@@ -164,14 +161,6 @@
 				A1D4B38E2C8C0E0E0015B941 /* ReactNativeSDKExampleUITestsLaunchTests.m */,
 			);
 			path = ReactNativeSDKExampleUITests;
-			sourceTree = "<group>";
-		};
-		A1D4B39C2C8C4F860015B941 /* jsbundle */ = {
-			isa = PBXGroup;
-			children = (
-				A1D4B39B2C8C4F860015B941 /* main.jsbundle */,
-			);
-			path = jsbundle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,11 +269,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1D4B3B02C90060C0015B941 /* assets in Resources */,
 				A1D4B3732C8C0E0E0015B941 /* Assets.xcassets in Resources */,
 				A1D4B3762C8C0E0E0015B941 /* Base in Resources */,
+				A1FA56972CF45A15006A52DA /* jsbundle.bundle in Resources */,
 				A1D4B3712C8C0E0D0015B941 /* Base in Resources */,
-				A1D4B39D2C8C4F860015B941 /* main.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
